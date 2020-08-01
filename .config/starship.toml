@@ -1,0 +1,4 @@
+[character]
+symbol = "[I] ❯"
+vicmd_symbol = "[N] ❯"
+use_symbol_for_status = false
