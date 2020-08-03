@@ -13,4 +13,4 @@ export TERMINAL=/usr/bin/alacritty
 export GOPATH=$HOME/go
 
 # Path
-export PATH=$PATH:$HOME/go/bin:$GOROOT/bin:$HOME/bin
+export PATH=$PATH:$HOME/go/bin:$GOROOT/bin:$HOME/bin:$HOME/.emacs.d/bin
