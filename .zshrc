@@ -61,6 +61,7 @@ alias free='free -m'                                            # Show sizes in 
 alias gitu='git add . && git commit && git push'
 alias lg='lazygit'
 alias fzpac="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+alias fzman="man -k . | fzf --prompt='Man> ' | awk '{print $1}' | xargs -r man"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Theming section  
