@@ -1,4 +1,4 @@
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux attach-session; fi
 
 ## Options section
 setopt correct                                                  # Auto correct mistakes
