@@ -34,6 +34,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # enable substitution for prompt
 setopt prompt_subst
 
+
 ZSH_TMUX_AUTOSTART=true
 
 # load zgen
@@ -45,20 +46,27 @@ if ! zgen saved; then
   # specify plugins here
   zgen oh-my-zsh
   zgen oh-my-zsh plugins/fzf
-  zgen oh-my-zsh plugins/color-man-pages
+  zgen oh-my-zsh plugins/colored-man-pages
   zgen oh-my-zsh plugins/vi-mode
   zgen oh-my-zsh plugins/fd
   zgen oh-my-zsh plugins/ripgrep
   zgen oh-my-zsh plugins/tmux
   zgen oh-my-zsh plugins/git-prompt
+  zgen oh-my-zsh plugins/docker-compose
+  zgen oh-my-zsh plugins/docker
+  zgen oh-my-zsh plugins/zsh-interactive-cd
 
   zgen load n12o/zsh-aliases-exa 
-  zgen load denysdovhan/spaceship-prompt spaceship
+  # zgen load denysdovhan/spaceship-prompt spaceship
   zgen load urbainvaes/fzf-marks
+  zgen load webyneter/docker-aliases 
 
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-history-substring-search
+
   # generate the init script from plugins above
   zgen save
 fi
+
+eval "$(starship init zsh)"
 
