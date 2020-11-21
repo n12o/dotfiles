@@ -1,0 +1,9 @@
+dotbare
+fzf-marks-git
+git-delta-bin
+lazygit
+nerd-fonts-fira-code
+rtl8821ce-dkms-git
+rtl88x2ce-dkms
+starship
+ytop-bin
